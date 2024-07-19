@@ -1,0 +1,50 @@
+/*CSS Reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Generics*/
+header{
+    min-height: 50px;
+    background-color: #666;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+main{
+    flex-grow: 1;
+    overflow: auto;
+    position: relative;
+}
+
+footer{
+    height: 100px;
+    background-color: black;
+}
+
+/*Utils*/
+
+.flex{
+    display: flex;
+}
+
+
+/*Body*/
+
+.top-content{
+    background-color: aqua;
+    height: calc(100vh - 100px);
+}
+
+/*Main*/
+
+.side-nav{
+    width: 100px;
+    background-color: blueviolet;
+    align-items: stretch;
+}
