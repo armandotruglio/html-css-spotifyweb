@@ -1,6 +1,6 @@
 /*CSS Reset*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,13 +9,13 @@
 
 /*Generics*/
 
-body{
+body {
     font-family: sans-serif;
 }
 
-header{
+header {
     min-height: 100px;
-    background-color: rgb(0,0,0,0.8);
+    background-color: rgb(0, 0, 0, 0.8);
     position: sticky;
     top: 0;
     left: 0;
@@ -24,38 +24,40 @@ header{
     text-align: right;
 }
 
-main{
+main {
     flex-grow: 1;
     overflow: auto;
     position: relative;
 }
 
-footer{
+footer {
     height: 100px;
     background-color: #282828;
     color: white;
+
+    justify-content: space-between;
 
     padding: 1rem;
     gap: 1rem;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-img{
-    width: 100%;
+img {
+    height: 100%;
     display: block;
 }
 
 /*Utils*/
 
-.flex{
+.flex {
     display: flex;
 }
 
-.btn{
+.btn {
     padding: 0.5rem 1.5rem;
     border: 1px solid white;
     border-radius: 40px;
@@ -65,7 +67,7 @@ img{
 
 /*Body*/
 
-.top-content{
+.top-content {
     background-color: aqua;
     height: calc(100vh - 100px);
 }
@@ -73,28 +75,25 @@ img{
 /*Main*/
 
 /*Side Navbar*/
-.side-nav{
+.side-nav {
     overflow: hidden;
     width: 50px;
     background-color: black;
     color: #808080;
 
     flex-direction: column;
+    gap: 0.5rem;
 
     padding: 0.5rem;
 }
 
-.side-nav img{
+.side-nav img {
     width: 30px;
     height: 30px;
     margin: 0 auto;
 }
 
-.side-nav > div{
-    padding-bottom: 0.5rem;
-}
-
-.side-nav span{
+.side-nav span {
     display: none;
     margin-left: 0.5rem;
     font-size: 0.7rem;
@@ -103,87 +102,136 @@ img{
 
 
 /*Logo*/
-.logo img:last-child{
+.logo img:last-child {
     display: none;
     width: 80%;
     height: 80%;
     margin-left: 0;
-    margin-bottom: 1rem;
 }
 
 /*Playlist*/
-.playlist{
+.playlist {
     flex-grow: 1;
-    margin-top: 1rem;
     overflow: auto;
     display: none;
 }
 
-.playlist h4{
+.playlist h4 {
     font-size: 0.7rem;
     color: white;
     margin-bottom: 0.5rem
 }
 
-.new-playlist{
+.new-playlist {
     align-items: center;
 }
 
-.plus{
+.plus {
     background-color: #808080;
     padding: 0.5rem;
 }
 
-.plus i{
+.plus i {
     color: black;
 }
 
-.playlist li{
+.playlist li {
     font-weight: bold;
     margin: 1rem 0;
     font-size: 0.7rem;
 }
 
-
 /*Download*/
-
-.download{
+.download {
     margin-top: auto;
 }
 
-.download img{
+.download img {
     width: 20px;
     height: 20px;
 }
 
 /*Profile*/
-.profile{
+.profile {
     width: 35px;
     height: 35px;
     background-color: #808080;
     border-radius: 50%;
 }
 
-.profile img{
-    margin-bottom: 0;
-}
-
-
 /*Footer*/
 
-footer > div{
+footer>div {
     flex-basis: calc(100%/3);
 }
 
-.song{
-    background-color: orange;
+/*Song section*/
+
+.song {
+    gap: 1rem;
+    align-items: center;
 }
 
-.player{
-    background-color: green;
+.song figure {
+    height: 80%;
 }
 
-.audio{
-    background-color: brown;
+.song-title span {
+    color: #808080;
+    font-size: 0.8rem;
+    align-self: center;
 }
 
+.song .icons {
+    color: #808080;
+}
+
+/*Player section*/
+
+.action-buttons {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.play-button {
+    font-size: 2rem;
+}
+
+.song-duration {
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.duration {
+    flex-grow: 1;
+}
+
+.bar {
+    height: 5px;
+    border-radius: 20px;
+}
+
+.total {
+    background-color: #808080;
+}
+
+.partial {
+    width: 20%;
+    background-color: white;
+}
+
+/*Audio section*/
+
+.audio {
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.volume {
+    width: 100px;
+}

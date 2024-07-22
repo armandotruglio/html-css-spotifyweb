@@ -36,13 +36,9 @@
         display: block;
     }
 
-    /*aggiungo bordo alla sezione download*/
+    /*aggiungo margine alla sezione download e profile*/
     .download{
         border-bottom: 1px solid #808080;
         padding: 0.5rem 0;
-    }
-
-    .profile{
-        margin-top: 0.5rem;
     }
 }
