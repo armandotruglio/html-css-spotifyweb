@@ -1,0 +1,48 @@
+@media screen and (min-width: 639px) {
+    /*Aumenta larghezza side-nav*/
+    .side-nav{
+        width: 200px;
+    }
+    
+    /*Compare nuovo logo*/
+    .logo img:first-child{
+        display: none;
+    }
+
+    .logo img:last-child{
+        display: block;
+    }
+
+    /*Compaiono le scritte di fianco
+    alle immagini*/
+    .side-nav span{
+        display: inline;
+    }
+
+    /*Rimozione bordo immagini*/
+    .home img, .search img, .library img, .download img{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    /*Rendo flex le sezioni*/
+    .home, .search, .library, .download{
+        display: flex;
+        align-items: center;
+    }
+
+    /*Compare la sezione Playlist*/
+    .playlist{
+        display: block;
+    }
+
+    /*aggiungo bordo alla sezione download*/
+    .download{
+        border-bottom: 1px solid #808080;
+        padding: 0.5rem 0;
+    }
+
+    .profile{
+        margin-top: 0.5rem;
+    }
+}
