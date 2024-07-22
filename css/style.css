@@ -82,6 +82,7 @@ img {
     color: #808080;
 
     flex-direction: column;
+    justify-content: space-between;
     gap: 0.5rem;
 
     padding: 0.5rem;
@@ -100,6 +101,11 @@ img {
     font-weight: bolder;
 }
 
+/*Top Section*/
+
+.top-section > div{
+    margin-bottom: 0.5rem;
+}
 
 /*Logo*/
 .logo img:last-child {
@@ -141,10 +147,13 @@ img {
     font-size: 0.7rem;
 }
 
-/*Download*/
-.download {
-    margin-top: auto;
+
+/*Bottom section*/
+.bottom-section > div{
+    margin-bottom: 0.5rem;
 }
+
+/*Download*/
 
 .download img {
     width: 20px;
@@ -157,6 +166,11 @@ img {
     height: 35px;
     background-color: #808080;
     border-radius: 50%;
+}
+
+.profile img{
+    height: 80%;
+    width: 80%;
 }
 
 /*Footer*/
