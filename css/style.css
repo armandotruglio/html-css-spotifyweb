@@ -70,6 +70,9 @@ ul{
     font-size: 0.9rem;
 }
 
+.btn:hover{
+    padding: 0.7rem 2rem;
+}
 
 /*Body*/
 
@@ -111,6 +114,10 @@ ul{
 
 .sections-nav ul a{
     color: #808080;
+}
+
+.sections-nav li:hover{
+    filter: brightness(200%);
 }
 
 .active::after{
@@ -179,6 +186,11 @@ ul{
     width: 30px;
     height: 30px;
     margin: 0 auto;
+    cursor: pointer;
+}
+
+.side-nav img:not([alt="Logo"]){
+    opacity: 0.6;
 }
 
 .side-nav span {
@@ -186,12 +198,22 @@ ul{
     margin-left: 0.5rem;
     font-size: 0.7rem;
     font-weight: bolder;
+    cursor: pointer;
 }
+
+.side-nav img:hover{
+    opacity: 1;
+}
+
 
 /*Top Section*/
 
 .top-section > div{
     margin-bottom: 0.5rem;
+}
+
+.top-section > div:hover{
+    filter: brightness(200%);
 }
 
 /*Logo*/
@@ -215,8 +237,20 @@ ul{
     margin-bottom: 0.5rem
 }
 
+.playlist li a{
+    color: #808080;
+}
+
+.playlist li a:hover{
+    filter: brightness(200%);
+}
+
 .new-playlist {
     align-items: center;
+}
+
+.new-playlist:hover{
+    filter: brightness(200%);
 }
 
 .plus {
@@ -238,6 +272,10 @@ ul{
 /*Bottom section*/
 .bottom-section > div{
     margin-bottom: 0.5rem;
+}
+
+.download:hover{
+    filter: brightness(200%);
 }
 
 /*Download*/
@@ -281,10 +319,24 @@ footer>div {
     color: #808080;
     font-size: 0.8rem;
     align-self: center;
+    cursor: pointer;
+}
+
+.song-title span:hover{
+    filter: brightness(200%);
+    text-decoration: underline;
 }
 
 .song .icons {
     color: #808080;
+}
+
+.song .icons i{
+    cursor: pointer;
+}
+
+.song .icons i:hover{
+    filter: brightness(200%);
 }
 
 /*Player section*/
@@ -297,6 +349,10 @@ footer>div {
 
 .play-button {
     font-size: 2rem;
+    cursor: pointer;
+}
+.play-button i:hover{
+    font-size: 2.2rem;
 }
 
 .song-duration {
@@ -323,7 +379,30 @@ footer>div {
 .partial {
     width: 20%;
     background-color: white;
+    cursor: pointer;
+    position: relative;
 }
+
+.partial::after{
+    content: '';
+    display: none;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    right: 0;
+    top: -50%;
+    border-radius: 50%;
+}
+
+.partial:hover{
+    background-color:#adff2f;
+}
+
+.partial:hover::after{
+    display: block;
+}
+
 
 /*Audio section*/
 
