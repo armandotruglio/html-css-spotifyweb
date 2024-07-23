@@ -84,6 +84,21 @@ ul{
     padding: 1rem;
 }
 
+.content > *{
+    margin-bottom: 2rem;
+}
+
+.content h4{
+    margin-top: 1rem;
+}
+
+.content h6{
+    color: #808080;
+    font-weight: 200;
+
+    margin-top: 0.5rem;
+}
+
 .sections-nav ul{
     justify-content: center;
     gap: 2rem;
