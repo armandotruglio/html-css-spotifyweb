@@ -14,13 +14,13 @@ body {
 }
 
 header {
-    min-height: 100px;
-    background-color: rgb(0, 0, 0, 0.8);
+    min-height: 70px;
+    background-color: rgb(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
     left: 0;
 
-    padding: 1rem 0.5rem;
+    padding: 2rem 0.5rem;
     text-align: right;
 }
 
@@ -48,7 +48,12 @@ a {
 
 img {
     height: 100%;
+    width: 100%;
     display: block;
+}
+
+ul{
+    list-style-type: none;
 }
 
 /*Utils*/
@@ -68,11 +73,41 @@ img {
 /*Body*/
 
 .top-content {
-    background-color: aqua;
+    background-color: #141922;
     height: calc(100vh - 100px);
 }
 
 /*Main*/
+
+.content{
+    color: white;
+    padding: 1rem;
+}
+
+.sections-nav ul{
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.sections-nav ul a{
+    color: #808080;
+}
+
+.gallery{
+    flex-wrap: wrap;
+
+    text-align: center;
+    margin: 0 -15px;
+}
+
+.gallery li{
+    flex-basis: 50%;
+    padding: 15px;
+}
 
 /*Side Navbar*/
 .side-nav {
@@ -81,6 +116,7 @@ img {
     background-color: black;
     color: #808080;
 
+    flex-shrink: 0;
     flex-direction: column;
     justify-content: space-between;
     gap: 0.5rem;
