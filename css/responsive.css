@@ -25,6 +25,20 @@
         margin-left: 0;
     }
 
+    .home{
+        position: relative;
+    }
+
+    .home::before{
+        content: '';
+        border-left: 2px solid #adff2f;
+        height: 30px;
+        width: 2px;
+
+        position: absolute;
+        left: -7px;
+    }
+
     /*Rendo flex le sezioni*/
     .home, .search, .library, .download{
         display: flex;
